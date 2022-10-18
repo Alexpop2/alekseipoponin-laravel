@@ -11,7 +11,7 @@ defineProps({
     <div>
         <Head :title="title" />
 
-        <div class="min-h-screen bg-gray-100">
+        <div class="min-h-screen bg-gray-400">
             <main>
                 <slot />
             </main>

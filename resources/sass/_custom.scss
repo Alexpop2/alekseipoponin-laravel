@@ -1,0 +1,18 @@
+.font-noto-sans {
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.font-cinzel {
+    font-family: 'Cinzel', serif;
+}
+
+.font-cinzel-decorative {
+    font-family: 'Cinzel Decorative', cursive;
+}
+
+.person {
+    .person__photo {
+        background: url("/assets/aleksei_poponin.png");
+        background-size: cover;
+    }
+}

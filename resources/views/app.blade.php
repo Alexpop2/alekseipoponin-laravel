@@ -14,7 +14,7 @@
     @vite('resources/js/app.js')
     @inertiaHead
 </head>
-<body class="font-sans antialiased">
+<body class="font-noto-sans antialiased">
 @inertia
 </body>
 </html>
