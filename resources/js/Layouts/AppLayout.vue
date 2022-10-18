@@ -1,6 +1,7 @@
 <script setup>
 import {defineProps} from "vue";
 import {Head} from '@inertiajs/inertia-vue3';
+import Menu from "../Components/Menu.vue";
 
 defineProps({
     title: String,
@@ -11,11 +12,12 @@ defineProps({
     <div>
         <Head :title="title" />
 
-        <div class="min-h-screen bg-gray-400">
+        <div class="min-h-screen bg-gray-400 mb-12">
             <main>
                 <slot />
             </main>
         </div>
+        <Menu />
     </div>
 </template>
 
