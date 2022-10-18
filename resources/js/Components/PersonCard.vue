@@ -1,5 +1,5 @@
 <template>
-    <div class="w-full mx-auto lg:mx-0 max-w-[500px] border rounded-lg bg-white h-[500px] xs:h-[700px] lg:h-full drop-shadow-2xl z-10 person" v-motion-slide-left >
+    <div class="w-full mx-auto lg:mx-0 max-w-[500px] border rounded-lg bg-white h-[500px] xs:h-[700px] lg:h-full drop-shadow-2xl z-10 person" >
         <div class="h-[45%] xs:h-[60%] w-full rounded-t-lg bg-gray-400 px-20 relative overflow-hidden">
             <div class="w-[1000px] h-[500px] absolute bg-gradient-to-r from-gray-500 via-white to-gray-500 rounded-full blur-[25px] opacity-25 left-[-250px]"></div>
             <div class="person__photo-container absolute w-full h-full px-20 left-0 top-0">
