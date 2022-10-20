@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 .font-noto-sans {
     font-family: 'Noto Sans', sans-serif;
 }
@@ -20,4 +24,19 @@
 .left-w-center {
     left: 50%;
     transform: translateX(-50%);
+}
+
+::-webkit-scrollbar {
+    width: 6px;
+    background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgba(0,0,0,.5);
+    border-radius: 6px;
+}
+
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: none;
+    background-color: transparent;
 }
