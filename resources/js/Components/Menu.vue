@@ -1,14 +1,24 @@
 <script setup>
 
 import MenuElement from "./MenuElement.vue";
+import {defineProps} from "vue";
+
+defineProps({
+    pageData: Object
+});
+
+function scrollTo(el){
+    let domEl = document.querySelector(`#${el}`);
+    window.scrollTo(0, domEl.offsetTop);
+}
 </script>
 
 <template>
     <div class="fixed left-w-center w-full lg:w-fit bottom-0 lg:bottom-4 mx-auto bg-white lg:rounded-lg drop-shadow-2xl border border-solid border-gray-300 z-50">
         <ul class="flex justify-between">
             <MenuElement
-                :href="route('about')"
-                :active="route().current('about')"
+                @click="pageData.currentSection = 'about'; scrollTo('about')"
+                :active="pageData.currentSection === 'about'"
             >
                 <template #icon>
                     <i class="fa-regular fa-user"></i>
@@ -18,8 +28,8 @@ import MenuElement from "./MenuElement.vue";
                 </template>
             </MenuElement>
             <MenuElement
-                :href="route('resume')"
-                :active="route().current('resume')"
+                @click="pageData.currentSection = 'resume'; scrollTo('resume')"
+                :active="pageData.currentSection === 'resume'"
             >
                 <template #icon>
                     <i class="fa-regular fa-rectangle-list"></i>
@@ -29,8 +39,8 @@ import MenuElement from "./MenuElement.vue";
                 </template>
             </MenuElement>
             <MenuElement
-                :href="route('projects')"
-                :active="route().current('projects')"
+                @click="pageData.currentSection = 'projects'; scrollTo('projects')"
+                :active="pageData.currentSection === 'projects'"
             >
                 <template #icon>
                     <i class="fa-solid fa-briefcase"></i>
@@ -40,8 +50,8 @@ import MenuElement from "./MenuElement.vue";
                 </template>
             </MenuElement>
             <MenuElement
-                :href="route('contact')"
-                :active="route().current('contact')"
+                @click="pageData.currentSection = 'contact'; scrollTo('contact')"
+                :active="pageData.currentSection === 'contact'"
             >
                 <template #icon>
                     <i class="fa-regular fa-envelope"></i>

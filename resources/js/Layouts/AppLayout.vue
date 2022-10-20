@@ -5,6 +5,7 @@ import Menu from "../Components/Menu.vue";
 
 defineProps({
     title: String,
+    pageData: Object,
 });
 </script>
 
@@ -17,7 +18,7 @@ defineProps({
                 <slot />
             </main>
         </div>
-        <Menu />
+        <Menu :page-data="pageData" />
     </div>
 </template>
 
