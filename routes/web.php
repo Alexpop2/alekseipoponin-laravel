@@ -16,3 +16,5 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
    return \Inertia\Inertia::render('Home');
 })->name('about');
+
+Route::post('/mail', [\App\Http\Controllers\MailController::class, 'send'])->name('mail');
