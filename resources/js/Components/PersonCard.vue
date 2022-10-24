@@ -13,11 +13,11 @@
             <h1 class="mt-2 text-3xl font-extralight">Aleksei Poponin</h1>
             <div class="text-gray-500 font-extralight">Full Stack Web developer</div>
             <div class="w-full flex justify-center gap-4 mt-4">
-                <a href="#" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-                <a href="#" target="_blank"><i class="fa-brands fa-facebook"></i></a>
-                <a href="#" target="_blank"><i class="fa-brands fa-github"></i></a>
-                <a href="#" target="_blank"><i class="fa-solid fa-envelope"></i></a>
-                <a href="#" target="_blank"><i class="fa-solid fa-mobile-button"></i></a>
+                <a href="https://linkedin.com/in/aleksei-poponin-495465ab" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://www.facebook.com/profile.php?id=100000985119984" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://github.com/Alexpop2" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a href="mailto:alekseipoponin@alekseipoponin.com" target="_blank"><i class="fa-solid fa-envelope"></i></a>
+                <a href="tel:+905345621993" target="_blank"><i class="fa-solid fa-mobile-button"></i></a>
             </div>
         </div>
     </div>
